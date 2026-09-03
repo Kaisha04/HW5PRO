@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Company>
+  <Employee id="1">
+    <Name>Влад</Name>
+    <Position>C# Developer</Position>
+  </Employee>
+  <Employee id="2">
+    <Name>Олена</Name>
+    <Position>QA Engineer</Position>
+  </Employee>
+</Company>
