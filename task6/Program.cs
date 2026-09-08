@@ -31,10 +31,9 @@ namespace task6
 
         string configFilePath = Path.Combine(myAppFolder, "TelephoneBook.xml");
             var rootElement = new XElement("MyContacts");
-            var contactElement = new XElement("Contact", new XAttribute("TelephoneNumber", "123-456-7890"), "John Doe");
-            contactElement.Add(new XElement("Contact", new XAttribute("TelephoneNumber", "987-654-3210"), "Jane Smith"));
-            contactElement.Add(new XElement("Contact", new XAttribute("TelephoneNumber", "555-555-5555"), "Bob Johnson"));
-            rootElement.Add(contactElement);
+            rootElement.Add(new XElement("Contact", new XAttribute("TelephoneNumber", "123-456-7890"), "John Doe"));
+            rootElement.Add(new XElement("Contact", new XAttribute("TelephoneNumber", "987-654-3210"), "Jane Smith"));
+            rootElement.Add(new XElement("Contact", new XAttribute("TelephoneNumber", "555-555-5555"), "Bob Johnson"));
             rootElement.Save(configFilePath);
             Console.WriteLine("XML файл створено та збережено за шляхом: " + configFilePath);
         }
